@@ -21,7 +21,7 @@ class OpencageGeocodeController extends Controller
      */
     public function __construct()
     {
-        $this->opencageApiKey = env('OPENCAGE_APP_KEY');
+        $this->opencageApiKey = env('OPENCAGE_API_KEY');
         $this->geocoder = new Geocoder($this->opencageApiKey);
     }
 
